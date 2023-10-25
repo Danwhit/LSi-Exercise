@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class enquiryForm extends Model
 {
     use HasFactory;
 
-    public function getRouteKeyName(){
-        return "url_slug";
-    }
+    public $fillable = ['name','email','product','message'];
 }

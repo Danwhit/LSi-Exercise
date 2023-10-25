@@ -12,4 +12,8 @@
             @endforeach
         </div>
     @endisset
+
+    @if ($page->id === 2)
+    <x-enquiry-form/>
+    @endif
 </x-layout>

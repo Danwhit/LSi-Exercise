@@ -26,4 +26,11 @@ class PageController extends Controller
     {
         return view('page.show', compact('page'));
     }
+
+    public function form()
+    {
+        $page = Page::find(2);
+
+        return view('page.show', compact('page'));
+    }
 }
